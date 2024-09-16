@@ -6,15 +6,16 @@
   gap: 20px;
   padding: 20px;
   flex-basis: calc((100% - 24px) / 2);
-  border: 1px solid grey;
-  border-radius: 20px;
-  transition: all 0.2s ease-in;
   @media screen and (min-width: 950px) {
     flex-basis: calc((100% - 48px) / 3);
   }
   @media screen and (min-width: 1400px) {
     flex-basis: calc((100% - 72px) / 4);
   }
+  
+  border: 1px solid grey;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
 
   &:hover {
     border-color: purple;
@@ -67,4 +68,9 @@ transition: all 0.2s ease-in;
   text-decoration: none;
   cursor: pointer;
   margin: auto 0;
+  &:hover,
+  &:focus {
+    background-color: purple;
+    outline: none;
+  }
 }
